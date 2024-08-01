@@ -118,7 +118,7 @@ describe('Section 2: Visual tests', () => {
 
     it('Check navigation part and first link', () => {
         cy.get('nav').children().should('have.length', 2)
-
+          
         // Get navigation element, find siblings that contains h1 and check if it has Registration form in string
         cy.get('nav').siblings('h1').should('have.text', 'Registration form number 2')
         
